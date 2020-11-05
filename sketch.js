@@ -49,9 +49,9 @@ function touchMoved(e) {
 
 function touchEnded() {
   if (ghostSinewave.mag() > 20) {
-    if (waves.length === 30) {
-      waves.shift();
-    }
+    // if (waves.length === 30) {
+    //   waves.shift();
+    // }
     var newWave = new Sinewave({
       x: tapStart.x,
       y: tapStart.y,
